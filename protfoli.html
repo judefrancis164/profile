@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="protofoli.css">
+
+</head>
+<body>
+    <div class="main">
+    <div class="hero">
+        
+            <img src="wolflogo-removebg-preview.png" class="logo">
+            <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Protfolio</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Hire Me</a></li>
+                
+            </ul>
+        </nav>
+        <div class="detail">
+            <h2>Software Devloper</h2>
+            <h1>I,m Jude <span>Francis</span></h1>
+            <p> This is  my official protfolio website to shows all 
+                <br>Details and work expriences of  web deveploment
+            </p>
+            <a href="a" >Download CV</a>
+        </div>
+      <div class="judeimg">
+         <img src="proffinaljude.jpg" class="Jude"> </div> 
+        <div class="cover"></div>
+
+    </div>
+
+
+
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="proffinaljude.jpg">
+                
+            </div>
+            <div class="about-col-2">
+                <h1>About Me</h1>
+        <p>
+            Accomplished Software Developer skilled in
+ multiple programming languages<br> with expertise in
+ Javascript and Python. Works collaboratively <br>to
+ meet project milestones. Exceptional
+ troubleshooting and debugging skills.</p>
+     <div class="tab-titles">
+       
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('Education')">Education</p>
+        <p class="tab-links" onclick="opentab('experience')">experience </p>
+     </div>
+     
+     <div class="tab-contents active-tab" id="skills"><ul>
+        
+           
+        <li>
+            <span>Technical skill</span><br>
+            <li type="disk"> HTML5,CSS3</li>
+            <li type="disk">Python</li>
+            <li type="disk"> Javascript</li>
+            <li type="disk"> SQL </li>
+            <li type="disk"> React js</li>
+            <li type="disk"> Django</li>
+            <li type="disk"> Bootstrap</li>
+        </li>
+        <li>
+            <span>soft skills</span><br><ul>
+                <li type="disk"> communication skills</li>
+                <li type="disk"> multitasking</li>
+                <li type="disk"> team management</li>
+                <li type="disk"> Decision makeing</li>
+            </ul>
+
+        </li>
+    </ul>
+</div>
+<div class="tab-contents" id="Education"><ul>
+    <li>
+        <span>DEGREE</span><br>Bachelor's of Computer Application 
+        <li type="disk">(09/2021 - 05/2024)</li>
+        <li type="disk"> Mets College of advance studies </li>
+    </li>
+    <li>
+        <span>HIGHER SECONDARY</span><br>Commerce
+        <li type="disk">(07/2019 - 05/2021)</li>
+        <li type="disk">Edathala HSS Aluva</li>
+    </li>
+    <li>
+        <span>MATRICULATION</span><br>
+        <li type="disk">SNDP HS Aluva</li>
+        <li type="disk">(2019)</li>
+    </li>
+</ul>
+</div>
+<div class="tab-contents" id="experience"><ul>
+    <li>
+        <span> Python FullStck Devolpment-Internship</span><br> Q&J spider
+        <li type="disk">(05/2019 - 09/2024)</li>
+        <li>•Developed creative ideas and solutions to innovate
+            software and Collaborated with UX and UI design
+            teams to develop client briefs.
+            </li>
+            <li>•Maintained excellent knowledge of emerging
+                multimedia technologies and trends to meet client
+                demand.
+                </li>
+    </li>
+    <li>
+        <span>Django-devloper-Internship</span><br>Grapesgenix Technical solutions pvt.ltd
+        <li type="disk">(11/2023 - 02/2024)</li>
+        <li>• Collaborated with cross-functional development
+            teams to raise technical standards for ongoing
+            projects.Produced clean, error-free code in line with
+            internal quality standards</li>
+            <li>•Learned multiple coding languages and
+                development frameworks to serve needs of
+                changing development program.</li>
+    </li>
+    
+</ul>
+</div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+</body>
+</html>
